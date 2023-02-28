@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <p id="thapa">Gopal</p>
+    <p class="tech">Keshari</p>
+    <p class="tech">Kesahri2</p>
+    <p class="tech">Keshari3</p>
+    <p class="tech">Keshari4</p>
+
+<script type="text/javascript">
+    var a=document.getElementById("thapa").innerHTML;
+     document.write(a);
+
+</script>
+
+<!-- how to access element by class -->
+
+<script type="text/javascript">
+
+    var b=document.getElementsByClassName("tech")[0].innerHTML;
+    document.write(b);
+</script>
+
+
+<!-- how to access element ny tag name -->
+
+<script>
+    var tag=document.getElementsByTagName("p");
+    document.write(tag);
+    console.log(tag);
+</script>
+
+
+
+<!-- how to access first elements -->
+
+<script>
+    var p=document.querySelector('p').innerHTML;
+    document.write(p);
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

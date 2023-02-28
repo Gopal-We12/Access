@@ -1,0 +1,69 @@
+Synonyms: ES6 ,ES2015 and ECMASCRIPT 2015.
+
+Babel:
+
+A transplier that can convert ES6 code to ES5 code.
+1:Let and Const.
+
+var is function scoped and let is block scoped.
+
+const Pi=3.1432;
+
+//Destructing...
+const biodata={
+    name:'gopal',age:22 ,born:'India'}
+undefined
+biodata
+{name: 'gopal', age: 22, born: 'India'}
+const name=biodata.name;
+undefined
+name
+'gopal'
+const {age,born}=biodata;
+undefined
+age
+22
+born
+'India'
+
+
+//Template string.
+
+let show="My name is "+name+"My age is" +age+ "I was born in" +born;
+
+
+show
+'My name is gopalMy age is22I was born inIndia'
+
+let showvalue=`My name is ${name} .My age is ${age}. I was bron in ${born};`
+
+showvalue
+
+
+'My name is gopal .My age is 22. I was bron in India;'
+
+
+
+
+
+
+
+
+//Array Function...
+
+function addsum(a,b){
+    return a+b;
+}
+undefined
+addsum();
+NaN
+addsum(5,5)
+10
+
+
+let addsums=(a,b)=>{return a+b;}
+undefined
+addsums();
+NaN
+addsums(5,5);
+10

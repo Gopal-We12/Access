@@ -1,0 +1,30 @@
+<script>
+
+
+
+    let fizzbuzz=[];
+    let i=1;
+
+
+
+    function fizbuz(){
+    while(i<=100){
+
+        if((i%3)==0 && (i%5)==0){
+            fizzbuzz.push("FizzBuzz");    
+        }
+        if((i%3)==0){
+            fizzbuzz.push("Fizz");
+        }
+        else if((i%5)==0){
+            fizzbuzz.push("Buzz");
+        }
+        else{
+            fizzbuzz.push(i);
+        }
+        i++;
+    }
+    console.log(fizzbuzz);
+}
+fizbuz();
+</script>
